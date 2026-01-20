@@ -16,8 +16,9 @@ export function Product({ product, loadCart }) {
     
 
     const selectQuantity = (event) => { setQuantity(Number(event.target.value)) };
+
     return (
-        <div key={product.id} className="product-container">
+        <div key={product.id} data-testid = 'product-container' className="product-container">
             <div className="product-image-container">
                 <img data-testid = 'product-image' className="product-image"
                     src={product.image} />
